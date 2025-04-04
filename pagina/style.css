@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url(images/He.jpg) center bottom no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #fffdfc;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu .navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu .navbar ul li:hover {
+    transform: scale(1.1);
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #324fee;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-icono:hover {
+    transform: rotate(180deg);
+}
+
+.menu label {
+    cursor: pointer;
+    display: initial;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #0c1130;
+    color: #f9fafc;
+    text-transform: uppercase;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-1:hover {
+    background-color: #324fee;
+    transform: scale(1.05);
+}
+
+.contexto {
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.contexto-content {
+    text-align: center;
+}
+
+.contexto-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.contexto-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contexto-1 {
+    padding: 0 25px;
+}
+
+.contexto-1 img {
+    width: 200px;
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contexto-1 img:hover {
+    transform: rotateY(180deg);
+}
+
+.contexto-1 h3 {
+    font-size: 20px;
+    line-height: 40px;
+    color: #323337;
+    margin-bottom: 15px;
+}
+
+
+
+.avances {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url(images/T1.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    text-align: center;
+ 
+}
+
+.avances-content {
+    text-align: center;
+}
+
+.avances-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.avances-content p {
+    color: #f9fafc;
+}
+.avances-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.avances-1 {
+    padding: 0 25px;
+}
+.avances-1 img {
+    width: 150px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.avances-1 img:hover {
+    transform: rotateY(180deg);
+}
+
+.avances-1 h3 {
+    font-size: 20px;
+    line-height: 40px;
+    color: #f9fafc;
+    margin-bottom: 15px;
+    
+}
+
+
+.general {
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #e1e2e6;
+}
+
+.general-2 {
+    background-image: url(images/IM.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3 {
+    background-image: url(images/IMP.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px;
+}
+
+.personajes {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.personajes-container{
+    text-align: center;
+    padding: 11px 35px;
+}
+
+.personajes-container h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+}   
+
+.personajes-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personajes-1 {
+    padding: 0 55px;
+}
+
+.personajes-1 img {
+    width: 150px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.personajes-1 img:hover {
+    transform: rotateY(180deg);
+}
+
+.footer {
+    background-color: #000000;
+    padding: 100px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.footer-content {
+    display: flex;
+    color: #fffdfc;
+    justify-content: space-between;
+}
+
+
+
+@media (max-width: 991px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    #menu:checked ~ .navbar {
+        display: block;
+    }
+
+    .header {
+        min-height: auto;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .contexto-content h2,
+    .txt p {
+        padding: 0;
+    }
+
+    .contexto-group,
+    .avances-group,
+    .general,
+    .personajes-content,
+    .footer-content {
+        flex-direction: column;
+    }
+}
